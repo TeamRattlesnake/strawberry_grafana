@@ -7,7 +7,7 @@ services:
     env_file: env.txt
     user: '0'
     ports:
-      - 3000:3000
+      - 14567:3000
     volumes:
       - ./grafana_storage:/var/lib/grafana
 
