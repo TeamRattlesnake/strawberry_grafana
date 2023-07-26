@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+
+  grafana:
+    image: grafana/grafana-enterprise
+    env_file: env.txt
+    user: '0'
+    ports:
+      - 3000:3000
+    volumes:
+      - ./grafana_storage:/var/lib/grafana
+
